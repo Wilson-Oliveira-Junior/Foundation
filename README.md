@@ -18,23 +18,29 @@ Foundation é uma engine para jogos educacionais baseada em desafios contextuais
 
 Diagrama (visão de alto nível):
 
-```
-       +----------------+
-       |   Game Engine  |
-       +--------+-------+
-            |
-    +---------------+----------------+
-    |               |                |
-    |               |                |
-  +---v----+    +-----v-----+    +-----v------+ 
-  | Board   |    | Challenge |    | Teacher    |
-  | Engine  |    | Engine    |    | Engine     |
-  +---+----+    +-----+-----+    +-----+------+ 
-    |               |                |
-  +---v----+    +-----v-----+    +-----v------+ 
-  | Tiles   |    | Content   |    | UI         |
-  | Players |    | Packs     |    |            |
-  +--------+    +-----------+    +------------+
+```mermaid
+graph TB
+  GameEngine["Game Engine"]
+  GameEngine --> BoardEngine["Board Engine / Service"]
+  GameEngine --> ChallengeEngine["Challenge Engine"]
+  GameEngine --> TeacherEngine["Teacher / UI"]
+
+  BoardEngine --> BoardGenerator["BoardGenerator (Service)"]
+  BoardEngine --> BoardModel["BoardModel (Model)"]
+  BoardEngine --> BoardRenderer["BoardRenderer (Renderer)"]
+
+  ChallengeEngine --> ChallengeBank["ChallengeBank (content)"]
+  ChallengeBank --> ContentPack["ContentPack (Programming / English / Math)"]
+
+  ChallengeEngine --> PlayerSession["PlayerSession (history)"]
+  GameEngine --> RewardEngine["RewardEngine"]
+
+  subgraph UI
+    TeacherEngine
+    GameUI["Game UI / HUD"]
+  end
+
+  GameEngine --> UIManager["UIManager / Managers"]
 ```
 
 Design recommendations
