@@ -69,11 +69,16 @@ export default class Board {
       });
     });
 
-    // draw center (joia)
     const { centerX, centerY } = this.cfg;
     this.graphics.fillStyle(0x22aa22, 1);
     this.graphics.fillCircle(centerX, centerY, 40);
     this.graphics.lineStyle(3, 0x000000, 0.6);
     this.graphics.strokeCircle(centerX, centerY, 40);
+      // draw center (Cornerstone)
+  }
+
+  // expose tracks for other systems (player placement)
+  getTracks() {
+    return this.generateTracks();
   }
 }

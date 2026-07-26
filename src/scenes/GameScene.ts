@@ -18,6 +18,9 @@ enum GameState {
 export default class GameScene extends Phaser.Scene {
   state: GameState = GameState.SETUP;
   turnQueue: string[] = [];
+  pieces: any[] = [];
+  tracks: { x: number; y: number }[][] = [];
+  inputLocked: boolean = false;
 
   constructor() {
     super({ key: 'GameScene' });
@@ -37,6 +40,15 @@ export default class GameScene extends Phaser.Scene {
     // create adaptive board using configured players
     const board = new Board({ scene: this, centerX: 512, centerY: 384, players: cfg.players });
     board.drawPlaceholder();
+    this.tracks = board.getTracks();
+
+    // create placeholder player pieces
+    const colors = [0x2196f3, 0xff9800, 0x4caf50, 0x9c27b0, 0xf44336, 0xffeb3b];
+    for (let i = 0; i < cfg.players; i++) {
+      const start = this.tracks[i][0];
+      const piece = new (require('../entities/PlayerPiece').default)(this, start.x, start.y, colors[i % colors.length], i);
+      this.pieces.push(piece);
+    }
 
     // enqueue players
     this.turnQueue = cfg.names.slice(0, cfg.players);
@@ -47,7 +59,11 @@ export default class GameScene extends Phaser.Scene {
 
   startMatch() {
     this.state = GameState.ROLL_DICE;
-    this.turnQueue = ['Player 1', 'Player 2'];
+    // turnQueue already set from config; ensure pieces reset
+    this.turnQueue = this.turnQueue;
+    this.pieces.forEach(p => p.setPositionIndex(0));
+    // narrative: Cornerstone awakens at match start
+    this.add.text(20, 40, 'A Cornerstone despertou.', { color: '#ffdd55' });
     this.nextTurn();
   }
 
@@ -56,15 +72,28 @@ export default class GameScene extends Phaser.Scene {
       this.state = GameState.END_GAME;
       return;
     }
+    if (this.inputLocked) return;
     const player = this.turnQueue.shift()!;
     console.log('Turn of', player);
     this.state = GameState.ROLL_DICE;
-    this.time.delayedCall(500, () => this.revealChallenge(player));
+    // perform deterministic dice roll using rng
+    const rng = (this.game as any).rng || Math.random;
+    const roll = Math.floor(rng() * 6) + 1;
+    console.log('Rolled:', roll);
+    // animate movement of the corresponding piece
+    const playerIndex = 0; // map player name -> index
+    const piece = this.pieces[playerIndex];
+    this.inputLocked = true;
+    piece.moveAlong(this.tracks[playerIndex], roll, () => {
+      this.inputLocked = false;
+      this.revealChallenge(player);
+    });
   }
 
   revealChallenge(player: string) {
     this.state = GameState.REVEAL_CHALLENGE;
-    this.add.text(20, 60, `Desafio para ${player}`, { color: '#ffff00' });
+    // narrative: Cornerstone reveals a fragment when a space is reached
+    this.add.text(20, 60, `A Cornerstone revelou um Fragmento. Desafio para ${player}`, { color: '#ffff00' });
     // wait for teacher decision via UI
     this.pendingTeacher = player;
     this.showAwaitingTeacher();
@@ -121,9 +150,11 @@ export default class GameScene extends Phaser.Scene {
   applyOutcome(player: string, approved: boolean) {
     this.state = GameState.APPLY_OUTCOME;
     if (approved) {
-      this.add.text(20, 140, `${player} aprovado ✅`, { color: '#00ff00' });
+      // narrative: Core responds to the curious when approved
+      this.add.text(20, 140, `${player} aprovado ✅ — O Core responde aos curiosos.`, { color: '#00ff00' });
     } else {
-      this.add.text(20, 140, `${player} reprovado ❌`, { color: '#ff4444' });
+      // narrative: corruption reaches the Cornerstone on failure
+      this.add.text(20, 140, `${player} reprovado ❌ — A corrupção alcançou a Cornerstone.`, { color: '#ff4444' });
     }
     this.time.delayedCall(800, () => {
       this.state = GameState.CHECK_WIN;

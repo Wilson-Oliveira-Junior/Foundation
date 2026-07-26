@@ -3,7 +3,7 @@
 Versão inicial do jogo digital de tabuleiro educativo para ensino de lógica de programação.
 
 Visão resumida
-- Objetivo: jogo por turnos onde os jogadores avançam em direção ao centro (a "Joia") resolvendo desafios de lógica.
+- Objetivo: jogo por turnos onde os jogadores avançam em direção ao centro (a "Cornerstone") resolvendo desafios de lógica.
 - Público: crianças (10+), adolescentes, iniciantes em programação e uso em sala de aula.
 - Plataforma: Web local (TypeScript + Phaser 3), execução offline.
 
