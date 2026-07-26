@@ -1,4 +1,7 @@
 import Phaser from 'phaser';
+import BoardGenerator from './BoardGenerator';
+import BoardModel from './BoardModel';
+import BoardRenderer from './BoardRenderer';
 
 export type BoardConfig = {
   scene: Phaser.Scene;
@@ -19,62 +22,56 @@ export default class Board {
     this.cfg = { rings: 4, spacesPerTrack: 25, radius: 300, ...cfg };
     this.scene = cfg.scene;
     this.graphics = this.scene.add.graphics();
+    // delegate generation/model/render responsibilities
+    const generator = new BoardGenerator();
+    this.tracks = generator.generate(this.cfg.players);
+    this.model = new BoardModel();
+    this.tracks.forEach((path, trackIndex) => {
+      path.forEach((p, spaceIndex) => {
+        const id = `${trackIndex}-${spaceIndex}`;
+        this.model.setTile({ id, trackIndex, spaceIndex, state: TileState.UNKNOWN } as any);
+      });
+    });
+    this.renderer = new BoardRenderer(this.scene);
+  }
+
+  // called by game logic when a player moves to a space
+  // emits a global event `playerEnteredTile` on the scene with payload { playerId, trackIndex, spaceIndex, tileId }
+  playerEnter(playerId: string, trackIndex: number, spaceIndex: number) {
+    const tileId = `${trackIndex}-${spaceIndex}`;
+    // On first pass, mark tile as DISCOVERED (visible to all)
+    const tile = this.model.getTile(tileId);
+    if (tile && tile.state === TileState.UNKNOWN) this.model.setTileState(tileId, TileState.DISCOVERED);
+    if (this.scene && this.scene.events) {
+      this.scene.events.emit('playerEnteredTile', { playerId, trackIndex, spaceIndex, tileId });
+    }
+    return tileId;
+  }
+
+  setTileState(tileId: string, state: TileState) {
+    this.model.setTileState(tileId, state);
+  }
+
+  getTileState(tileId: string): TileState | null {
+    const tile = this.model.getTile(tileId);
+    return tile ? tile.state : null;
   }
 
   // returns list of positions for each player track: array[playerIndex] = [{x,y}, ...]
   generateTracks() {
-    const { players, centerX, centerY, radius, rings, spacesPerTrack } = this.cfg;
-    const tracks: { x: number; y: number }[][] = [];
-
-    for (let p = 0; p < players; p++) {
-      const angleOffset = (2 * Math.PI * p) / players;
-      const path: { x: number; y: number }[] = [];
-
-      for (let i = 0; i < spacesPerTrack!; i++) {
-        // distribute points along a spiral-ish path from edge to center
-        const t = i / (spacesPerTrack! - 1); // 0..1
-        const r = radius! * (1 - t * 0.85); // shrink radius toward center
-        const theta = angleOffset + (t * Math.PI * 1.6); // wind toward center
-        const x = centerX + r * Math.cos(theta);
-        const y = centerY + r * Math.sin(theta);
-        path.push({ x, y });
-      }
-      tracks.push(path);
-    }
-    return tracks;
+    // expose previously generated tracks
+    return this.tracks;
   }
 
   drawPlaceholder() {
     this.graphics.clear();
     this.graphics.lineStyle(2, 0xffffff, 0.6);
-
-    const tracks = this.generateTracks();
-    tracks.forEach((path, idx) => {
-      const color = Phaser.Display.Color.HSLToColor(idx / tracks.length, 0.6, 0.5).color;
-      path.forEach((p, i) => {
-        // draw space
-        this.graphics.fillStyle(color, 1);
-        this.graphics.fillCircle(p.x, p.y, 16);
-        this.graphics.lineStyle(2, 0x000000, 0.6);
-        this.graphics.strokeCircle(p.x, p.y, 16);
-        if (i < path.length - 1) {
-          const next = path[i + 1];
-          this.graphics.lineStyle(4, color, 0.35);
-          this.graphics.beginPath();
-          this.graphics.moveTo(p.x, p.y);
-          this.graphics.lineTo(next.x, next.y);
-          this.graphics.closePath();
-          this.graphics.strokePath();
-        }
-      });
-    });
-
+    this.renderer.drawTrack(this.tracks.flat());
     const { centerX, centerY } = this.cfg;
     this.graphics.fillStyle(0x22aa22, 1);
     this.graphics.fillCircle(centerX, centerY, 40);
     this.graphics.lineStyle(3, 0x000000, 0.6);
     this.graphics.strokeCircle(centerX, centerY, 40);
-      // draw center (Cornerstone)
   }
 
   // expose tracks for other systems (player placement)
