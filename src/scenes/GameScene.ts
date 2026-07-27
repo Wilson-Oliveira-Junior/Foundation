@@ -29,7 +29,7 @@ export default class GameScene extends Phaser.Scene {
   state: GameState = GameState.SETUP;
   turnQueue: string[] = [];
   pieces: any[] = [];
-  tracks: { x: number; y: number }[][] = [];
+  tracks: import('../board/Tile').Tile[][] = [];
   inputLocked: boolean = false;
   board?: Board;
 
@@ -74,7 +74,7 @@ export default class GameScene extends Phaser.Scene {
     this.playerIndexByName = new Map<string, number>();
     for (let i = 0; i < cfg.players; i++) {
       const start = this.tracks[i][0];
-      const piece = new PlayerPiece(this, start.x, start.y, colors[i % colors.length], i);
+      const piece = new PlayerPiece(this, start.x!, start.y!, colors[i % colors.length], i);
       this.pieces.push(piece);
       // map player name to index (use provided names order)
       const name = this.turnQueue[i] || `Player ${i + 1}`;
@@ -289,12 +289,12 @@ export default class GameScene extends Phaser.Scene {
     this.uiProfessorText.setVisible(false);
 
     // keyboard listeners
-    this.input.keyboard.on('keydown-Y', () => {
+      this.input?.keyboard?.on('keydown-Y', () => {
       if (!this.pendingTeacher) return;
       this.teacherDecisionFromUI(true);
       this.hideProfessorHint();
     });
-    this.input.keyboard.on('keydown-N', () => {
+      this.input?.keyboard?.on('keydown-N', () => {
       if (!this.pendingTeacher) return;
       this.teacherDecisionFromUI(false);
       this.hideProfessorHint();

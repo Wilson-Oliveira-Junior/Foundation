@@ -12,6 +12,17 @@ Versão inicial do jogo digital de tabuleiro educativo para ensino de lógica de
 
 Essas mudanças corrigem erros de tempo de execução e de compilação, deixando o fluxo de turnos e mapeamento de jogadores determinísticos.
 
+  ### Mudanças aplicadas hoje (resumo)
+
+  - `BoardRenderer`: agora utiliza a lista de chaves de tiles disponíveis (`availableTileKeys`) carregada no `BootScene` e seleciona variantes das tiles (curvas/retas/neutras) em vez de apenas placeholders estáticos. Isso melhora a variedade visual do tabuleiro.
+  - `Board`: aumentei a escala do `board-background` em ~12% para acomodar tiles maiores (alvo de 240px) e reduzir risco de tiles sendo desenhadas parcialmente fora do fundo.
+  - Novos utilitários e assets adicionados: scripts para normalização de assets de jogador e mover `Tile.png` para `assets/tiles/tile-neutral.png`; novas imagens de tile (curvas) e `crystal.png` incluídas no repositório para testes locais.
+  - Build e deploy: commit local criado e push enviado ao repositório remoto (branch `main`) após as alterações.
+
+  Notas de QA rápida:
+  - Rode o dev server (`npm --prefix Foundation run dev`) e abra `http://localhost:5173/` para verificar o background e a distribuição das tiles.
+  - Se as variantes de tile ainda aparecerem como quadrados neutros, posso mapear explicitamente orientações e aplicar rotações para que curvas/retas mostrem corretamente.
+
 ## Filosofia do Projeto
 
 Foundation é uma engine para jogos educacionais baseada em desafios contextuais. O tabuleiro controla apenas navegação e estados visuais. Todo o conhecimento é entregue por motores independentes (por jogador) — `ChallengeEngine`, `RewardEngine`, `Narrator` — permitindo reutilizar a mesma estrutura para diferentes disciplinas sem alterar a lógica principal.

@@ -15,7 +15,14 @@ export function loadPackDir(packDir: string) {
 export function generateDeck(questions: Question[], seed: number | string, count: number) {
   // deterministic shuffle using a simple mulberry32
   const s = Number(String(seed).split('').reduce((a,b)=>a+b.charCodeAt(0),0) || 1);
-  function mulberry32(a:number){return function(){var t=a+=0x6D2B79F5;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;}}
+  function mulberry32(a:number){
+    return function(){
+      var t = a += 0x6D2B79F5;
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
   const rng = mulberry32(s);
   const arr = questions.slice();
   for (let i = arr.length -1; i>0; i--){

@@ -137,7 +137,9 @@ export default class BootScene extends Phaser.Scene {
       // expose loaded tile keys to registry for renderer to pick
       this.registry.set('availableTileKeys', tileList.map(n => n.replace(/\.[a-z]+$/i, '')));
 
-      if (this.load.list && this.load.list.length > 0) {
+      const loadList: any = this.load.list;
+      const hasQueued = loadList ? (loadList.size !== undefined ? loadList.size > 0 : (loadList.length > 0)) : false;
+      if (hasQueued) {
         this.load.once('complete', () => this.scene.start('ConfigScene'));
         this.load.start();
       } else {

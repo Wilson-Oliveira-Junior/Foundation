@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import BoardGenerator from './BoardGenerator';
+import { Tile } from './Tile';
 import BoardModel from './BoardModel';
 import BoardRenderer from './BoardRenderer';
 import { TileState } from './Tile';
@@ -18,6 +19,9 @@ export default class Board {
   scene: Phaser.Scene;
   cfg: BoardConfig;
   graphics: Phaser.GameObjects.Graphics;
+  tracks: Tile[][];
+  model: BoardModel;
+  renderer: BoardRenderer;
 
   constructor(cfg: BoardConfig) {
     this.cfg = { rings: 4, spacesPerTrack: 25, radius: 300, ...cfg };
@@ -27,10 +31,10 @@ export default class Board {
     const generator = new BoardGenerator();
     this.tracks = generator.generate(this.cfg.players, this.cfg.centerX, this.cfg.centerY, this.cfg.radius || 300);
     this.model = new BoardModel();
-    this.tracks.forEach((path, trackIndex) => {
-      path.forEach((p, spaceIndex) => {
+    this.tracks.forEach((path: Tile[], trackIndex: number) => {
+      path.forEach((p: Tile, spaceIndex: number) => {
         const id = `${trackIndex}-${spaceIndex}`;
-        this.model.setTile({ id, trackIndex, spaceIndex, state: TileState.UNKNOWN } as any);
+        this.model.setTile({ id, trackIndex, spaceIndex, state: TileState.UNKNOWN });
       });
     });
     this.renderer = new BoardRenderer(this.scene);

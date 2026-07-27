@@ -24,7 +24,7 @@ export default class BoardRenderer {
       }
       if (!imageKey && hasNeutral) imageKey = 'tile-neutral';
       if (imageKey) {
-        const img = this.scene.add.image(t.x, t.y, imageKey).setDepth(10);
+        const img = this.scene.add.image(t.x!, t.y!, imageKey).setDepth(10);
         img.setOrigin(0.5, 0.5);
         // adjust scale to tile-friendly size (fit to approx 240px)
         try {
@@ -37,7 +37,7 @@ export default class BoardRenderer {
         }
       } else {
         // last-resort primitive
-        this.scene.add.circle(t.x, t.y, 16, 0x666666).setDepth(10);
+        this.scene.add.circle(t.x!, t.y!, 16, 0x666666).setDepth(10);
       }
     });
   }
