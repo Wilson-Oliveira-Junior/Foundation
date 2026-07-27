@@ -37,7 +37,7 @@ export default class GameScene extends Phaser.Scene {
     super({ key: 'GameScene' });
   }
 
-  create() {
+  async create() {
     this.add.text(20, 20, 'Foundation - Game Scene (esqueleto)', { color: '#ffffff' });
 
     const cfg = this.registry.get('config') || { players: 2, names: ['Player 1', 'Player 2'], difficulty: 'beginner', seed: Date.now() };
@@ -50,6 +50,18 @@ export default class GameScene extends Phaser.Scene {
 
     // create adaptive board using configured players
     const board = new Board({ scene: this, centerX: 512, centerY: 384, players: cfg.players });
+    // ensure required textures are loaded before drawing
+    const tex = this.textures;
+    const toLoad: { key: string; url: string }[] = [];
+    if (!tex.exists('tile-neutral')) toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
+    if (!tex.exists('board-background')) toLoad.push({ key: 'board-background', url: '/assets/background.png' });
+    if (toLoad.length > 0) {
+      toLoad.forEach(t => this.load.image(t.key, t.url + '?_ts=' + Date.now()));
+      await new Promise<void>((resolve) => {
+        this.load.once('complete', () => resolve());
+        this.load.start();
+      });
+    }
     board.drawPlaceholder();
     this.tracks = board.getTracks();
     this.board = board;
@@ -108,6 +120,41 @@ export default class GameScene extends Phaser.Scene {
 
     // create teacher UI (Approve / Reject)
     this.createTeacherUI();
+    // load content pack (tries generated then questions.json) and prepare deck
+    this.loadContentPack('pack-programming-logic-v1', cfg.seed, 1000).then(() => {
+      console.log('Loaded content pack, deck size=', this.deck.length);
+    }).catch(err => {
+      console.warn('Content pack load failed:', err);
+    });
+  }
+
+  async loadContentPack(packName: string, seed: string | number, maxCount: number) {
+    const base = `/content-packs/${packName}`;
+    const urls = [
+      `${base}/questions.generated.json`,
+      `${base}/questions.json`
+    ];
+    let data: any = null;
+    for (const u of urls) {
+      try {
+        const res = await fetch(u);
+        if (!res.ok) continue;
+        data = await res.json();
+        break;
+      } catch (e) {
+        // ignore and try next
+      }
+    }
+    if (!data) throw new Error('No pack data found');
+    const questions = data.questions || [];
+    // shuffle deterministically using game's rng
+    const rngFn = (this.game as any).rng ? () => (this.game as any).rng() : Math.random;
+    const arr = questions.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(rngFn() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    this.deck = arr.slice(0, Math.min(maxCount, arr.length));
   }
 
   // runtime fields
@@ -120,6 +167,8 @@ export default class GameScene extends Phaser.Scene {
   uiManager?: UIManager;
   narrator?: Narrator;
   tileEventEngine?: TileEventEngine;
+  // content pack deck
+  deck: any[] = [];
 
   startMatch() {
     this.state = GameState.ROLL_DICE;
@@ -172,13 +221,22 @@ export default class GameScene extends Phaser.Scene {
   async revealChallenge(player: string) {
     // Legacy path kept: request via cornerstone if not already requested
     this.state = GameState.REVEAL_CHALLENGE;
-    const inst = await this.cornerstone?.onPlayerEnter(player);
-    if (inst) {
-      this.uiManager?.showChallenge(this, player, inst.challenge.question);
-      this.pendingChallenge = { playerId: player, challengeId: inst.challenge.id };
+    // Prefer using deck if available
+    let q: any | null = null;
+    if (this.deck && this.deck.length > 0) {
+      q = this.deck.shift();
+      this.uiManager?.showChallenge(this, player, q.question);
+      this.pendingChallenge = { playerId: player, challengeId: q.id };
+    } else {
+      const inst = await this.cornerstone?.onPlayerEnter(player);
+      if (inst) {
+        this.uiManager?.showChallenge(this, player, inst.challenge.question);
+        this.pendingChallenge = { playerId: player, challengeId: inst.challenge.id };
+      }
     }
     this.pendingTeacher = player;
     this.uiManager?.showAwaitingTeacher(this);
+    this.showProfessorHint();
   }
 
   pendingTeacher: string | null = null;
@@ -224,37 +282,38 @@ export default class GameScene extends Phaser.Scene {
   }
 
   createTeacherUI() {
-    // create simple DOM buttons anchored top-right
-    const container = document.createElement('div');
-    container.id = 'teacher-ui';
-    container.style.position = 'absolute';
-    container.style.right = '20px';
-    container.style.top = '20px';
-    container.style.zIndex = '1000';
-    container.style.display = 'flex';
-    container.style.gap = '8px';
+    // In-game minimal teacher UI using keyboard shortcuts (Y/N)
+    // Small hint text shown when awaiting teacher decision
+    this.uiProfessorText = this.add.text(520, 20, '', { color: '#ffffff', backgroundColor: 'rgba(0,0,0,0.4)', padding: { x: 8, y: 6 } }).setDepth(1000);
+    this.uiProfessorText.setScrollFactor(0);
+    this.uiProfessorText.setVisible(false);
 
-    const approve = document.createElement('button');
-    approve.textContent = 'Aprovar ✅';
-    approve.style.padding = '8px 12px';
-    const reject = document.createElement('button');
-    reject.textContent = 'Reprovar ❌';
-    reject.style.padding = '8px 12px';
-
-    approve.onclick = () => {
+    // keyboard listeners
+    this.input.keyboard.on('keydown-Y', () => {
+      if (!this.pendingTeacher) return;
       this.teacherDecisionFromUI(true);
-      approve.disabled = true; reject.disabled = true;
-      setTimeout(() => { approve.disabled = false; reject.disabled = false; }, 500);
-    };
-    reject.onclick = () => {
+      this.hideProfessorHint();
+    });
+    this.input.keyboard.on('keydown-N', () => {
+      if (!this.pendingTeacher) return;
       this.teacherDecisionFromUI(false);
-      approve.disabled = true; reject.disabled = true;
-      setTimeout(() => { approve.disabled = false; reject.disabled = false; }, 500);
-    };
+      this.hideProfessorHint();
+    });
+  }
 
-    container.appendChild(approve);
-    container.appendChild(reject);
-    document.body.appendChild(container);
+  uiProfessorText?: Phaser.GameObjects.Text;
+
+  showProfessorHint() {
+    if (!this.uiProfessorText) return;
+    this.uiProfessorText.setText('Professor\n[Y] Aprovar    [N] Reprovar');
+    this.uiProfessorText.setVisible(true);
+    // auto-hide after 8s if not used
+    this.time.delayedCall(8000, () => { if (this.uiProfessorText) this.uiProfessorText.setVisible(false); });
+  }
+
+  hideProfessorHint() {
+    if (!this.uiProfessorText) return;
+    this.uiProfessorText.setVisible(false);
   }
 
   applyOutcome(player: string, approved: boolean) {

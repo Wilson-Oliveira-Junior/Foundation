@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import BoardGenerator from './BoardGenerator';
 import BoardModel from './BoardModel';
 import BoardRenderer from './BoardRenderer';
+import { TileState } from './Tile';
 
 export type BoardConfig = {
   scene: Phaser.Scene;
@@ -24,7 +25,7 @@ export default class Board {
     this.graphics = this.scene.add.graphics();
     // delegate generation/model/render responsibilities
     const generator = new BoardGenerator();
-    this.tracks = generator.generate(this.cfg.players);
+    this.tracks = generator.generate(this.cfg.players, this.cfg.centerX, this.cfg.centerY, this.cfg.radius || 300);
     this.model = new BoardModel();
     this.tracks.forEach((path, trackIndex) => {
       path.forEach((p, spaceIndex) => {
@@ -65,6 +66,24 @@ export default class Board {
 
   drawPlaceholder() {
     this.graphics.clear();
+    // draw background image if available
+    try {
+      // add background centered; use a low depth so tiles render above it
+      const bg = this.scene.add.image(this.cfg.centerX, this.cfg.centerY, 'board-background').setDepth(0);
+      bg.setOrigin(0.5, 0.5);
+      // scale to fit radius (best-effort)
+      const desired = (this.cfg.radius || 300) * 2;
+      const scaleX = desired / bg.width;
+      const scaleY = desired / bg.height;
+      bg.setScale(Math.max(scaleX, scaleY) * 1.12);
+    } catch (e) {
+      // ignore if texture not loaded; fallback to primitives
+    }
+    // debug: report if textures are present
+    // eslint-disable-next-line no-console
+    console.log('[Board] board-background exists?', this.scene.textures.exists('board-background'));
+    // eslint-disable-next-line no-console
+    console.log('[Board] tile-neutral exists?', this.scene.textures.exists('tile-neutral'));
     this.graphics.lineStyle(2, 0xffffff, 0.6);
     this.renderer.drawTrack(this.tracks.flat());
     const { centerX, centerY } = this.cfg;

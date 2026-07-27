@@ -1,0 +1,10 @@
+{
+  "id": "pack-programming-logic-v1",
+  "pack": "programming",
+  "name": "Programming - Logic Pack",
+  "version": "1.0.0",
+  "author": "auto-generated",
+  "description": "210 logic-focused programming questions: 70 easy, 70 medium, 70 hard.",
+  "categories": ["logic"],
+  "difficulties": ["easy","medium","hard"]
+}

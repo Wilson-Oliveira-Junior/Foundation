@@ -1,0 +1,83 @@
+{
+  "pack": "programming",
+  "category": "logic",
+  "difficulty": "mixed",
+  "version": 1,
+  "questions": [
+    {
+      "id": "LOG-E-001",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Recognize basic conditional reasoning",
+      "bloom_level": "remember",
+      "question": "Se estiver chovendo, qual ação faz mais sentido?",
+      "options": [
+        "Levar um guarda-chuva",
+        "Colocar óculos de sol",
+        "Acender uma lanterna",
+        "Ligar o computador"
+      ],
+      "answer": 0,
+      "explanation": "Uma decisão lógica considera a situação apresentada.",
+      "tags": ["logic","decision"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-002",
+      "type": "multiple_choice",
+      "skill": "sequence",
+      "learning_objective": "Identify first step in a simple sequence",
+      "bloom_level": "understand",
+      "question": "Qual é o primeiro passo para escovar os dentes?",
+      "options": [
+        "Passar creme dental na escova",
+        "Guardar a escova",
+        "Enxaguar a boca",
+        "Dormir"
+      ],
+      "answer": 0,
+      "explanation": "Todo algoritmo possui uma sequência lógica.",
+      "tags": ["sequence"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-003",
+      "type": "multiple_choice",
+      "skill": "comparison",
+      "learning_objective": "Compare integer values",
+      "bloom_level": "remember",
+      "question": "Qual número é maior?",
+      "options": ["3","7","2","5"],
+      "answer": 1,
+      "explanation": "Comparações são muito utilizadas na programação.",
+      "tags": ["comparison"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-004",
+      "type": "multiple_choice",
+      "skill": "pattern",
+      "learning_objective": "Recognize numeric patterns",
+      "bloom_level": "apply",
+      "question": "Complete a sequência: 2, 4, 6, ?",
+      "options": ["7","8","10","12"],
+      "answer": 1,
+      "explanation": "A sequência aumenta de dois em dois.",
+      "tags": ["pattern"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-005",
+      "type": "multiple_choice",
+      "skill": "decision",
+      "learning_objective": "Apply simple rule-based decision",
+      "bloom_level": "apply",
+      "question": "O semáforo está vermelho. O que deve acontecer?",
+      "options": ["Parar","Acelerar","Fechar os olhos","Buzinar"],
+      "answer": 0,
+      "explanation": "Programas também tomam decisões baseadas em regras.",
+      "tags": ["if","decision"],
+      "difficulty": "easy"
+    }
+  ]
+}

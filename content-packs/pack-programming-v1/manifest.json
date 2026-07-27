@@ -1,0 +1,10 @@
+{
+  "id": "pack-programming-v1",
+  "pack": "programming",
+  "name": "Programming - Starter Pack",
+  "version": "1.0.0",
+  "author": "auto-generated",
+  "description": "Starter pack for programming questions (logic/easy).",
+  "categories": ["logic"],
+  "difficulties": ["easy"]
+}

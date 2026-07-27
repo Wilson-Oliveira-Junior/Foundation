@@ -1,0 +1,4208 @@
+{
+  "pack": "programming",
+  "category": "logic",
+  "difficulty": "mixed",
+  "version": 1,
+  "questions": [
+    {
+      "id": "LOG-E-001",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 1: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-002",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 2: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-003",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 3: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-004",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 4: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-005",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 5: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-006",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 6: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-007",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 7: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-008",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 8: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-009",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 9: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-010",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 10: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-011",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 11: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-012",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 12: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-013",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 13: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-014",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 14: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-015",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 15: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-016",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 16: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-017",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 17: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-018",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 18: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-019",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 19: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-020",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 20: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-021",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 21: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-022",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 22: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-023",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 23: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-024",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 24: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-025",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 25: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-026",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 26: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-027",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 27: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-028",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 28: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-029",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 29: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-030",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 30: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-031",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 31: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-032",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 32: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-033",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 33: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-034",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 34: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-035",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 35: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-036",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 36: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-037",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 37: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-038",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 38: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-039",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 39: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-040",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 40: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-041",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 41: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-042",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 42: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-043",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 43: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-044",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 44: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-045",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 45: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-046",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 46: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-047",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 47: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-048",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 48: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-049",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 49: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-050",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 50: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-051",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 51: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-052",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 52: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-053",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 53: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-054",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 54: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-055",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 55: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-056",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 56: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-057",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 57: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-058",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 58: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-059",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 59: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-060",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 60: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-061",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 61: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-062",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 62: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-063",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 63: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-064",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 64: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-065",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 65: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-066",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 66: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-067",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 67: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-068",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 68: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-069",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 69: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-E-070",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "remember",
+      "question": "Pergunta 70: Qual é a próxima ação lógica nesta situação? (dificuldade: easy)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "LOG-M-071",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 71: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-072",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 72: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-073",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 73: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-074",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 74: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-075",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 75: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-076",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 76: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-077",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 77: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-078",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 78: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-079",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 79: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-080",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 80: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-081",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 81: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-082",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 82: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-083",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 83: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-084",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 84: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-085",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 85: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-086",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 86: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-087",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 87: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-088",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 88: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-089",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 89: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-090",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 90: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-091",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 91: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-092",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 92: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-093",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 93: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-094",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 94: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-095",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 95: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-096",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 96: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-097",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 97: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-098",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 98: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-099",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 99: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-100",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 100: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-101",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 101: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-102",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 102: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-103",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 103: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-104",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 104: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-105",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 105: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-106",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 106: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-107",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 107: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-108",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 108: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-109",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 109: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-110",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 110: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-111",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 111: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-112",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 112: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-113",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 113: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-114",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 114: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-115",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 115: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-116",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 116: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-117",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 117: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-118",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 118: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-119",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 119: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-120",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 120: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-121",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 121: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-122",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 122: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-123",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 123: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-124",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 124: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-125",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 125: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-126",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 126: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-127",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 127: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-128",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 128: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-129",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 129: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-130",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 130: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-131",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 131: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-132",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 132: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-133",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 133: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-134",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 134: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-135",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 135: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-136",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 136: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-137",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 137: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-138",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 138: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-139",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 139: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-M-140",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "understand",
+      "question": "Pergunta 140: Qual é a próxima ação lógica nesta situação? (dificuldade: medium)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "LOG-H-141",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 141: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-142",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 142: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-143",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 143: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-144",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 144: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-145",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 145: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-146",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 146: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-147",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 147: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-148",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 148: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-149",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 149: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-150",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 150: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-151",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 151: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-152",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 152: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-153",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 153: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-154",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 154: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-155",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 155: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-156",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 156: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-157",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 157: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-158",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 158: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-159",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 159: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-160",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 160: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-161",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 161: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-162",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 162: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-163",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 163: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-164",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 164: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-165",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 165: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-166",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 166: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-167",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 167: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-168",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 168: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-169",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 169: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-170",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 170: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-171",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 171: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-172",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 172: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-173",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 173: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-174",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 174: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-175",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 175: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-176",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 176: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-177",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 177: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-178",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 178: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-179",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 179: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-180",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 180: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-181",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 181: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-182",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 182: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-183",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 183: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-184",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 184: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-185",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 185: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-186",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 186: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-187",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 187: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-188",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 188: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-189",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 189: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-190",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 190: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-191",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 191: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-192",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 192: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-193",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 193: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-194",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 194: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-195",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 195: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-196",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 196: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-197",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 197: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-198",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 198: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-199",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 199: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-200",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 200: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-201",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 201: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-202",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 202: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-203",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 203: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-204",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 204: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-205",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 205: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-206",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 206: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-207",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 207: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-208",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 208: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-209",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 209: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "LOG-H-210",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "learning_objective": "Apply basic logic patterns",
+      "bloom_level": "apply",
+      "question": "Pergunta 210: Qual é a próxima ação lógica nesta situação? (dificuldade: hard)",
+      "options": [
+        "Opção A",
+        "Opção B",
+        "Opção C",
+        "Opção D"
+      ],
+      "answer": 0,
+      "explanation": "Resposta exemplo.",
+      "tags": [
+        "logic"
+      ],
+      "difficulty": "hard"
+    }
+  ]
+}

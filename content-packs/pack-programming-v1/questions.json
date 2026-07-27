@@ -1,0 +1,118 @@
+{
+  "pack": "programming",
+  "category": "logic",
+  "difficulty": "easy",
+  "version": 1,
+  "questions": [
+    {
+      "id": "LOG-E-001",
+      "type": "multiple_choice",
+      "skill": "logical_reasoning",
+      "question": "Se estiver chovendo, qual ação faz mais sentido?",
+      "options": [
+        "Levar um guarda-chuva",
+        "Colocar óculos de sol",
+        "Acender uma lanterna",
+        "Ligar o computador"
+      ],
+      "answer": 0,
+      "explanation": "Uma decisão lógica considera a situação apresentada.",
+      "tags": ["logic","decision"]
+    },
+    {
+      "id": "LOG-E-002",
+      "type": "multiple_choice",
+      "skill": "sequence",
+      "question": "Qual é o primeiro passo para escovar os dentes?",
+      "options": [
+        "Passar creme dental na escova",
+        "Guardar a escova",
+        "Enxaguar a boca",
+        "Dormir"
+      ],
+      "answer": 0,
+      "explanation": "Todo algoritmo possui uma sequência lógica.",
+      "tags": ["sequence"]
+    },
+    {
+      "id": "LOG-E-003",
+      "type": "multiple_choice",
+      "skill": "comparison",
+      "question": "Qual número é maior?",
+      "options": ["3","7","2","5"],
+      "answer": 1,
+      "explanation": "Comparações são muito utilizadas na programação.",
+      "tags": ["comparison"]
+    },
+    {
+      "id": "LOG-E-004",
+      "type": "multiple_choice",
+      "skill": "pattern",
+      "question": "Complete a sequência: 2, 4, 6, ?",
+      "options": ["7","8","10","12"],
+      "answer": 1,
+      "explanation": "A sequência aumenta de dois em dois.",
+      "tags": ["pattern"]
+    },
+    {
+      "id": "LOG-E-005",
+      "type": "multiple_choice",
+      "skill": "decision",
+      "question": "O semáforo está vermelho. O que deve acontecer?",
+      "options": ["Parar","Acelerar","Fechar os olhos","Buzinar"],
+      "answer": 0,
+      "explanation": "Programas também tomam decisões baseadas em regras.",
+      "tags": ["if","decision"]
+    },
+    {
+      "id": "LOG-E-006",
+      "type": "multiple_choice",
+      "skill": "logic",
+      "question": "Se uma porta está fechada, o que você faz primeiro?",
+      "options": ["Abrir a porta","Pular a janela","Ir embora","Dormir"],
+      "answer": 0,
+      "explanation": "Resolver problemas exige seguir uma ordem lógica.",
+      "tags": ["logic"]
+    },
+    {
+      "id": "LOG-E-007",
+      "type": "multiple_choice",
+      "skill": "classification",
+      "question": "Qual destes objetos é um computador?",
+      "options": ["Notebook","Geladeira","Bicicleta","Livro"],
+      "answer": 0,
+      "explanation": "Identificar elementos corretamente também faz parte da lógica.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "LOG-E-008",
+      "type": "multiple_choice",
+      "skill": "order",
+      "question": "Qual dessas ações normalmente acontece antes de comer um sanduíche?",
+      "options": ["Preparar o sanduíche","Escovar os dentes","Dormir","Fechar a porta"],
+      "answer": 0,
+      "explanation": "Um algoritmo segue etapas em ordem.",
+      "tags": ["order"]
+    },
+    {
+      "id": "LOG-E-009",
+      "type": "multiple_choice",
+      "skill": "problem_solving",
+      "question": "Seu celular acabou a bateria. O que faz sentido fazer?",
+      "options": ["Carregar o celular","Jogar fora","Colocar na geladeira","Molhar na água"],
+      "answer": 0,
+      "explanation": "A lógica ajuda a escolher soluções adequadas.",
+      "tags": ["problem"]
+    },
+    {
+      "id": "LOG-E-010",
+      "type": "multiple_choice",
+      "skill": "pattern",
+      "question": "Complete a sequência: A, B, C, ?",
+      "options": ["E","D","F","G"],
+      "answer": 1,
+      "explanation": "Reconhecer padrões é importante para programar.",
+      "tags": ["pattern"]
+    }
+  ]
+}
