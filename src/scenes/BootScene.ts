@@ -76,29 +76,19 @@ export default class BootScene extends Phaser.Scene {
     console.log('[BootScene] playerFiles:', playerFiles);
     // eslint-disable-next-line no-console
     console.log('[BootScene] missing after checks:', missing);
-    // check cornerstone jewel fallback
+    // NOTE: do NOT use Cornerstone.svg here — it's a 39MB, 267k-path Inkscape
+    // auto-trace of a bitmap (one <path> per pixel), not a real vector file.
+    // Fetching or rendering it will hang/crash the browser. Use crystal.png.
     try {
-      const svgUrl = `${location.origin}/assets/cornerstone/Cornerstone.svg?_ts=${Date.now()}`;
-      let r = await fetch(svgUrl, { method: 'GET' });
+      const cristalUrl = `${location.origin}/assets/cornerstone/crystal.png?_ts=${Date.now()}`;
+      const r = await fetch(cristalUrl, { method: 'GET' });
       // eslint-disable-next-line no-console
-      console.log('[BootScene] crystal fetch status', svgUrl, r.status, r.ok);
-      if (!r.ok) {
-        // try svg fallback
-        try {
-          r = await fetch(svgUrl, { method: 'GET' });
-          // eslint-disable-next-line no-console
-          console.log('[BootScene] crystal fetch status (svg)', svgUrl, r.status, r.ok);
-          if (!r.ok) missing.push('cornerstone/Cornerstone.svg');
-        } catch (e) {
-          // eslint-disable-next-line no-console
-          console.error('[BootScene] crystal fetch error (svg)', e);
-          missing.push('cornerstone/Cornerstone.svg');
-        }
-      }
+      console.log('[BootScene] crystal fetch status', cristalUrl, r.status, r.ok);
+      if (!r.ok) missing.push('cornerstone/crystal.png');
     } catch (e) {
       // eslint-disable-next-line no-console
       console.error('[BootScene] crystal fetch error', e);
-      missing.push('cornerstone/Cornerstone.svg');
+      missing.push('cornerstone/crystal.png');
     }
 
     if (missing.length > 0) {
@@ -137,8 +127,9 @@ export default class BootScene extends Phaser.Scene {
         // ignore
       }
 
-      // ensure neutral tile is always queued (case-insensitive)
-      if (!tileList.some(n => n.toLowerCase() === 'tile-neutral.svg')) tileList.push('Tile-Neutral.svg');
+      // ensure neutral tile is always queued (case-insensitive).
+      // actual file on disk is assets/tiles/neutral_tile.png
+      if (!tileList.some(n => n.toLowerCase() === 'neutral_tile.png')) tileList.push('neutral_tile.png');
 
       tileList.forEach(name => {
         const key = name.replace(/\.[a-z]+$/i, '').toLowerCase();
@@ -146,18 +137,12 @@ export default class BootScene extends Phaser.Scene {
           this.load.image(key, `/assets/tiles/${name}?_ts=${now}`);
         }
       });
-      // additionally, load cornerstone SVG from assets/cornerstone if present
-      try {
-        const cornerName = 'Cornerstone.svg';
-        const cornerUrl = `/assets/cornerstone/${cornerName}`;
-        // attempt a HEAD/fetch to see if it exists (best-effort)
-        fetch(cornerUrl + `?_ts=${now}`).then(r => {
-          if (r.ok && !this.textures.exists('cornerstone')) {
-            this.load.image('cornerstone', cornerUrl + `?_ts=${now}`);
-            this.load.image('Cornerstone', cornerUrl + `?_ts=${now}`);
-          }
-        }).catch(() => {});
-      } catch (_) {}
+      // load cornerstone crystal as a normal PNG texture.
+      // (Cornerstone.svg is a 39MB/267k-path auto-trace and must never be
+      // loaded as a live texture — see note above.)
+      if (!this.textures.exists('cornerstone')) {
+        this.load.image('cornerstone', `/assets/cornerstone/crystal.png?_ts=${now}`);
+      }
 
       // expose loaded tile keys to registry for renderer to pick (lowercase)
       this.registry.set('availableTileKeys', tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase()));

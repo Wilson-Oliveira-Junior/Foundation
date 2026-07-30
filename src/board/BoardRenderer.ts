@@ -8,7 +8,7 @@ export default class BoardRenderer {
     // draw tiles using loaded textures; fall back to neutral tile if specific not available
     const tex = this.scene.textures;
     const available: string[] = this.scene.registry.get('availableTileKeys') || [];
-    const hasNeutral = tex.exists('tile-neutral') || available.includes('tile-neutral');
+    const hasNeutral = tex.exists('neutral_tile') || available.includes('neutral_tile');
     track.forEach((t, idx) => {
       // pick a tile type from available keys, prefer specific direction tiles if present
       let imageKey: string | null = null;
@@ -22,11 +22,18 @@ export default class BoardRenderer {
           imageKey = candidates[idx % candidates.length];
         }
       }
-      if (!imageKey && hasNeutral) imageKey = 'tile-neutral';
+      if (!imageKey && hasNeutral) imageKey = 'neutral_tile';
       if (imageKey) {
-        const img = this.scene.add.image(t.x!, t.y!, imageKey);
-        // ensure sprite is centered on tile
-        img.setOrigin(0.5, 0.5);
+          // avoid adding duplicate image at same tile position
+          const imgName = `tile_${t.x}_${t.y}`;
+          if (this.scene.children.getByName(imgName)) return;
+
+          const img = this.scene.add.image(t.x!, t.y!, imageKey).setName(imgName);
+          // ensure consistent display size and center
+          img.setDisplaySize(240, 240);
+          img.setOrigin(0.5, 0.5);
+          // depth management: background (0) < tiles (10) < cornerstone (20)
+          img.setDepth(10);
         // prefer using natural image size if available
         try {
           const source = this.scene.textures.get(imageKey).getSourceImage() as HTMLImageElement;
@@ -47,6 +54,8 @@ export default class BoardRenderer {
         } catch (e) {
           img.setDisplaySize(96, 96);
         }
+        // enforce final desired display size to avoid oversized sprites
+        img.setDisplaySize(50, 50);
         // set depth by Y so items render in correct order on an isometric/top-down board
         img.setDepth(Math.round(t.y || 0));
         img.setPipeline('TextureTintPipeline');

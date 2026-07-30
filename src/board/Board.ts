@@ -127,10 +127,25 @@ export default class Board {
     // eslint-disable-next-line no-console
     console.log('[Board] board-background exists?', this.scene.textures.exists('board-background'));
     // eslint-disable-next-line no-console
-    console.log('[Board] tile-neutral exists?', this.scene.textures.exists('tile-neutral'));
+    console.log('[Board] neutral_tile exists?', this.scene.textures.exists('neutral_tile'));
     this.graphics.lineStyle(2, 0xffffff, 0.6);
     this.renderer.drawTrack(this.tracks.flat());
     const { centerX, centerY } = this.cfg;
+    // enforce depths for key layers: background (0) < tiles (10) < cornerstone (20)
+    try {
+      this.scene.children.list.forEach((child: any) => {
+        const key = child?.texture?.key;
+        if (!key) return;
+        if (key === 'board-background') {
+          child.setDepth(0);
+        }
+        if (key === 'cornerstone' || key === 'Cornerstone') {
+          child.setDepth(20);
+        }
+      });
+    } catch (e) {
+      // non-fatal
+    }
     // try to render the cornerstone/core crystal image at center if available
     const tex = this.scene.textures;
     const coreKeys = ['core_crystal', 'Cornerstone', 'cornerstone', 'crystal', 'core'];

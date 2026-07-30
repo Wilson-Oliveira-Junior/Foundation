@@ -16,11 +16,14 @@ Essas mudanças corrigem erros de tempo de execução e de compilação, deixand
 
   - `BoardRenderer`: agora utiliza a lista de chaves de tiles disponíveis (`availableTileKeys`) carregada no `BootScene` e seleciona variantes das tiles (curvas/retas/neutras) em vez de apenas placeholders estáticos. Isso melhora a variedade visual do tabuleiro.
   - `Board`: aumentei a escala do `board-background` em ~12% para acomodar tiles maiores (alvo de 240px) e reduzir risco de tiles sendo desenhadas parcialmente fora do fundo.
+   - Profundidade e tiles: tiles agora são renderizados com tamanho fixo 240×240; fundo (`board-background`) fica em depth 0 e `cornerstone` em depth 20 para evitar sobreposição indesejada.
+   - Scripts de assets: ferramentas para recortar/centralizar tiles e gerar versões híbridas/remasterizadas estão em `tile_gen/`.
   - Novos utilitários e assets adicionados: scripts para normalização de assets de jogador e mover `Tile.png` para `assets/tiles/tile-neutral.png`; novas imagens de tile (curvas) e `crystal.png` incluídas no repositório para testes locais.
   - Build e deploy: commit local criado e push enviado ao repositório remoto (branch `main`) após as alterações.
 
   Notas de QA rápida:
   - Rode o dev server (`npm --prefix Foundation run dev`) e abra `http://localhost:5173/` para verificar o background e a distribuição das tiles.
+   - Se os tiles ainda parecerem errados, limpe o cache do navegador (Ctrl+F5) ou force `_ts` nos assets para busting de cache.
   - Se as variantes de tile ainda aparecerem como quadrados neutros, posso mapear explicitamente orientações e aplicar rotações para que curvas/retas mostrem corretamente.
 
 ## Filosofia do Projeto

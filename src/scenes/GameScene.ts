@@ -60,19 +60,10 @@ export default class GameScene extends Phaser.Scene {
     // ensure required textures are loaded before drawing
     const tex = this.textures;
     const toLoad: { key: string; url: string }[] = [];
-    // allow tile-neutral in multiple formats (png/svg) or use availableTileKeys provided by BootScene
-    if (!tex.exists('tile-neutral')) {
-      const avail = this.registry.get('availableTileKeys') as string[] | undefined;
-      if (avail && avail.includes('tile-neutral')) {
-        // try to load whatever BootScene exposed (it includes extension-stripped keys)
-        // BootScene loaded list into registry as keys without extensions
-        // but the actual URL must include extension; prefer png then svg
-        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
-        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.svg' });
-      } else {
-        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
-        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.svg' });
-      }
+    // ensure the neutral tile texture is loaded
+    // actual file on disk is assets/tiles/neutral_tile.png
+    if (!tex.exists('neutral_tile')) {
+      toLoad.push({ key: 'neutral_tile', url: '/assets/tiles/neutral_tile.png' });
     }
     if (!tex.exists('board-background')) toLoad.push({ key: 'board-background', url: '/assets/background.png' });
     if (toLoad.length > 0) {
