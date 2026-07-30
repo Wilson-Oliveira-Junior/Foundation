@@ -40,6 +40,46 @@ export default class Board {
     this.renderer = new BoardRenderer(this.scene);
   }
 
+  // attempt to load an explicit positions map (produced by tools) to override generated tracks
+  async loadPositions(): Promise<boolean> {
+    try {
+      const res = await fetch('/assets/tiles/board-positions.json?_ts=' + Date.now());
+      if (!res.ok) return false;
+      const data = await res.json();
+      const positions = data.positions || [];
+      // build tracks from positions array
+      const tracksMap: Record<number, Tile[]> = {};
+      positions.forEach((p: any) => {
+        const t = p.track;
+        const s = p.space;
+        const x = p.x;
+        const y = p.y;
+        if (!tracksMap[t]) tracksMap[t] = [];
+        tracksMap[t][s] = { id: `${t}-${s}`, x, y, state: TileState.UNKNOWN } as any;
+      });
+      const tracks: Tile[][] = [];
+      Object.keys(tracksMap).map(k => parseInt(k, 10)).sort((a,b)=>a-b).forEach(k => tracks.push(tracksMap[k]));
+      if (tracks.length > 0) {
+        // if the JSON contains more tracks than the current game players,
+        // trim to the configured number of players so only requested tracks are shown
+        const desiredTracks = Math.max(1, Math.min(this.cfg.players || tracks.length, tracks.length));
+        this.tracks = tracks.slice(0, desiredTracks);
+        // rebuild model from positions
+        this.model = new BoardModel();
+        this.tracks.forEach((path: Tile[], trackIndex: number) => {
+          path.forEach((p: Tile, spaceIndex: number) => {
+            const id = `${trackIndex}-${spaceIndex}`;
+            this.model.setTile({ id, trackIndex, spaceIndex, state: TileState.UNKNOWN });
+          });
+        });
+        return true;
+      }
+    } catch (e) {
+      // ignore and fall back to generated tracks
+    }
+    return false;
+  }
+
   // called by game logic when a player moves to a space
   // emits a global event `playerEnteredTile` on the scene with payload { playerId, trackIndex, spaceIndex, tileId }
   playerEnter(playerId: string, trackIndex: number, spaceIndex: number) {
@@ -91,10 +131,37 @@ export default class Board {
     this.graphics.lineStyle(2, 0xffffff, 0.6);
     this.renderer.drawTrack(this.tracks.flat());
     const { centerX, centerY } = this.cfg;
-    this.graphics.fillStyle(0x22aa22, 1);
-    this.graphics.fillCircle(centerX, centerY, 40);
-    this.graphics.lineStyle(3, 0x000000, 0.6);
-    this.graphics.strokeCircle(centerX, centerY, 40);
+    // try to render the cornerstone/core crystal image at center if available
+    const tex = this.scene.textures;
+    const coreKeys = ['core_crystal', 'Cornerstone', 'cornerstone', 'crystal', 'core'];
+    let coreKey: string | null = null;
+    for (const k of coreKeys) {
+      if (tex.exists(k)) { coreKey = k; break; }
+    }
+    if (coreKey) {
+      try {
+        const img = this.scene.add.image(centerX, centerY, coreKey);
+        img.setOrigin(0.5, 0.5);
+        const src = this.scene.textures.get(coreKey).getSourceImage() as HTMLImageElement;
+        // make cornerstone visually larger to match tile footprint
+        const desired = 180; // diameter target to match tile footprint
+        // set exact display size to match tile footprint
+        img.setDisplaySize(desired, desired);
+        // ensure cornerstone renders above tiles
+        img.setDepth(100000);
+      } catch (e) {
+        // fallback to primitive if texture cannot be read
+        this.graphics.fillStyle(0x22aa22, 1);
+        this.graphics.fillCircle(centerX, centerY, 40);
+        this.graphics.lineStyle(3, 0x000000, 0.6);
+        this.graphics.strokeCircle(centerX, centerY, 40);
+      }
+    } else {
+      this.graphics.fillStyle(0x22aa22, 1);
+      this.graphics.fillCircle(centerX, centerY, 40);
+      this.graphics.lineStyle(3, 0x000000, 0.6);
+      this.graphics.strokeCircle(centerX, centerY, 40);
+    }
   }
 
   // expose tracks for other systems (player placement)

@@ -78,15 +78,27 @@ export default class BootScene extends Phaser.Scene {
     console.log('[BootScene] missing after checks:', missing);
     // check cornerstone jewel fallback
     try {
-      const testUrl = `${location.origin}/assets/cornerstone/crystal.png?_ts=${Date.now()}`;
-      const r = await fetch(testUrl, { method: 'GET' });
+      const svgUrl = `${location.origin}/assets/cornerstone/Cornerstone.svg?_ts=${Date.now()}`;
+      let r = await fetch(svgUrl, { method: 'GET' });
       // eslint-disable-next-line no-console
-      console.log('[BootScene] crystal fetch status', testUrl, r.status, r.ok);
-      if (!r.ok) missing.push('cornerstone/crystal.png');
+      console.log('[BootScene] crystal fetch status', svgUrl, r.status, r.ok);
+      if (!r.ok) {
+        // try svg fallback
+        try {
+          r = await fetch(svgUrl, { method: 'GET' });
+          // eslint-disable-next-line no-console
+          console.log('[BootScene] crystal fetch status (svg)', svgUrl, r.status, r.ok);
+          if (!r.ok) missing.push('cornerstone/Cornerstone.svg');
+        } catch (e) {
+          // eslint-disable-next-line no-console
+          console.error('[BootScene] crystal fetch error (svg)', e);
+          missing.push('cornerstone/Cornerstone.svg');
+        }
+      }
     } catch (e) {
       // eslint-disable-next-line no-console
       console.error('[BootScene] crystal fetch error', e);
-      missing.push('cornerstone/crystal.png');
+      missing.push('cornerstone/Cornerstone.svg');
     }
 
     if (missing.length > 0) {
@@ -125,17 +137,30 @@ export default class BootScene extends Phaser.Scene {
         // ignore
       }
 
-      // ensure neutral tile is always queued
-      if (!tileList.includes('tile-neutral.png')) tileList.push('tile-neutral.png');
+      // ensure neutral tile is always queued (case-insensitive)
+      if (!tileList.some(n => n.toLowerCase() === 'tile-neutral.svg')) tileList.push('Tile-Neutral.svg');
 
       tileList.forEach(name => {
-        const key = name.replace(/\.[a-z]+$/i, '');
+        const key = name.replace(/\.[a-z]+$/i, '').toLowerCase();
         if (!this.textures.exists(key)) {
           this.load.image(key, `/assets/tiles/${name}?_ts=${now}`);
         }
       });
-      // expose loaded tile keys to registry for renderer to pick
-      this.registry.set('availableTileKeys', tileList.map(n => n.replace(/\.[a-z]+$/i, '')));
+      // additionally, load cornerstone SVG from assets/cornerstone if present
+      try {
+        const cornerName = 'Cornerstone.svg';
+        const cornerUrl = `/assets/cornerstone/${cornerName}`;
+        // attempt a HEAD/fetch to see if it exists (best-effort)
+        fetch(cornerUrl + `?_ts=${now}`).then(r => {
+          if (r.ok && !this.textures.exists('cornerstone')) {
+            this.load.image('cornerstone', cornerUrl + `?_ts=${now}`);
+            this.load.image('Cornerstone', cornerUrl + `?_ts=${now}`);
+          }
+        }).catch(() => {});
+      } catch (_) {}
+
+      // expose loaded tile keys to registry for renderer to pick (lowercase)
+      this.registry.set('availableTileKeys', tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase()));
 
       const loadList: any = this.load.list;
       const hasQueued = loadList ? (loadList.size !== undefined ? loadList.size > 0 : (loadList.length > 0)) : false;

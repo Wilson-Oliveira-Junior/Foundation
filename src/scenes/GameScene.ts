@@ -50,12 +50,30 @@ export default class GameScene extends Phaser.Scene {
 
     // create adaptive board using configured players
     const board = new Board({ scene: this, centerX: 512, centerY: 384, players: cfg.players });
+    // if a positions map exists, load it to override generated tracks
+    try {
+      await board.loadPositions();
+    } catch (_) {}
     // ensure required textures are loaded before drawing
     const tex = this.textures;
     const toLoad: { key: string; url: string }[] = [];
-    if (!tex.exists('tile-neutral')) toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
+    // allow tile-neutral in multiple formats (png/svg) or use availableTileKeys provided by BootScene
+    if (!tex.exists('tile-neutral')) {
+      const avail = this.registry.get('availableTileKeys') as string[] | undefined;
+      if (avail && avail.includes('tile-neutral')) {
+        // try to load whatever BootScene exposed (it includes extension-stripped keys)
+        // BootScene loaded list into registry as keys without extensions
+        // but the actual URL must include extension; prefer png then svg
+        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
+        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.svg' });
+      } else {
+        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.png' });
+        toLoad.push({ key: 'tile-neutral', url: '/assets/tiles/tile-neutral.svg' });
+      }
+    }
     if (!tex.exists('board-background')) toLoad.push({ key: 'board-background', url: '/assets/background.png' });
     if (toLoad.length > 0) {
+      // queue each candidate URL; Phaser will pick the first that loads successfully
       toLoad.forEach(t => this.load.image(t.key, t.url + '?_ts=' + Date.now()));
       await new Promise<void>((resolve) => {
         this.load.once('complete', () => resolve());

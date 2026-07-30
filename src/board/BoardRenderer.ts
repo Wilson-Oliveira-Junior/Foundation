@@ -24,20 +24,27 @@ export default class BoardRenderer {
       }
       if (!imageKey && hasNeutral) imageKey = 'tile-neutral';
       if (imageKey) {
-        const img = this.scene.add.image(t.x!, t.y!, imageKey).setDepth(10);
+        const img = this.scene.add.image(t.x!, t.y!, imageKey);
+        // ensure sprite is centered on tile
         img.setOrigin(0.5, 0.5);
-        // adjust scale to tile-friendly size (fit to approx 240px)
+        // prefer using natural image size if available
         try {
-          const texFrame = this.scene.textures.get(imageKey).getSourceImage() as HTMLImageElement;
-          const desired = 240; // target tile size in pixels
-          const scale = desired / Math.max(1, texFrame.width);
-          img.setScale(scale);
+          const source = this.scene.textures.get(imageKey).getSourceImage() as HTMLImageElement;
+          const naturalW = source?.width || 128;
+          const naturalH = source?.height || 128;
+          // desired tile footprint (square) in pixels
+          const desired = 180; // exact square footprint to match art
+          // force display size to exact desired square for consistent placement
+          img.setDisplaySize(desired, desired);
         } catch (e) {
-          img.setScale(2.0);
+          img.setDisplaySize(96, 96);
         }
+        // set depth by Y so items render in correct order on an isometric/top-down board
+        img.setDepth(Math.round(t.y || 0));
+        img.setPipeline('TextureTintPipeline');
       } else {
         // last-resort primitive
-        this.scene.add.circle(t.x!, t.y!, 16, 0x666666).setDepth(10);
+        this.scene.add.circle(t.x!, t.y!, 16, 0x666666).setDepth(Math.round(t.y || 0));
       }
     });
   }
