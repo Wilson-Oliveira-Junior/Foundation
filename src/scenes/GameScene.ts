@@ -48,8 +48,11 @@ export default class GameScene extends Phaser.Scene {
     const rng = seedrandom(String(cfg.seed));
     (this.game as any).rng = rng;
 
-    // create adaptive board using configured players
-    const board = new Board({ scene: this, centerX: 512, centerY: 384, players: cfg.players });
+    // create adaptive board using configured players and camera center
+    const cam = this.cameras && this.cameras.main ? this.cameras.main : null;
+    const centerX = cam ? Math.round(cam.centerX) : 512;
+    const centerY = cam ? Math.round(cam.centerY) : 384;
+    const board = new Board({ scene: this, centerX, centerY, players: cfg.players });
     // if a positions map exists, load it to override generated tracks
     try {
       await board.loadPositions();

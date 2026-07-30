@@ -32,10 +32,18 @@ export default class BoardRenderer {
           const source = this.scene.textures.get(imageKey).getSourceImage() as HTMLImageElement;
           const naturalW = source?.width || 128;
           const naturalH = source?.height || 128;
-          // desired tile footprint (square) in pixels
-          const desired = 180; // exact square footprint to match art
-          // force display size to exact desired square for consistent placement
-          img.setDisplaySize(desired, desired);
+          // desired tile footprint (max dimension) in pixels
+          const desired = 220;
+          // preserve aspect ratio: scale so the larger side matches `desired`
+          if (naturalW >= naturalH) {
+            const scale = desired / naturalW;
+            img.displayWidth = Math.max(1, Math.round(naturalW * scale));
+            img.displayHeight = Math.max(1, Math.round(naturalH * scale));
+          } else {
+            const scale = desired / naturalH;
+            img.displayWidth = Math.max(1, Math.round(naturalW * scale));
+            img.displayHeight = Math.max(1, Math.round(naturalH * scale));
+          }
         } catch (e) {
           img.setDisplaySize(96, 96);
         }
