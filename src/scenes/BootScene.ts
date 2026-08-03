@@ -127,9 +127,10 @@ export default class BootScene extends Phaser.Scene {
         // ignore
       }
 
-      // ensure neutral tile is always queued (case-insensitive).
-      // actual file on disk is assets/tiles/neutral_tile.png
-      if (!tileList.some(n => n.toLowerCase() === 'neutral_tile.png')) tileList.push('neutral_tile.png');
+      // ensure a neutral path tile exists; prefer existing neutral_tile
+      if (!tileList.some(n => n.toLowerCase() === 'neutral_tile.png') && !tileList.some(n => n.toLowerCase() === 'straight.png')) {
+        // don't force-add straight.png if it doesn't exist on disk; leave tileList as-is
+      }
 
       tileList.forEach(name => {
         const key = name.replace(/\.[a-z]+$/i, '').toLowerCase();
@@ -137,6 +138,17 @@ export default class BootScene extends Phaser.Scene {
           this.load.image(key, `/assets/tiles/${name}?_ts=${now}`);
         }
       });
+      // create canonical mapping for common gameplay tile states to available files
+      const keysLower = tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase());
+      const canonical: Record<string,string> = {};
+      if (keysLower.includes('neutral_tile')) canonical['neutral_tile'] = 'neutral_tile';
+      if (keysLower.includes('revelado')) canonical['revelado'] = 'revelado';
+      if (keysLower.includes('evento')) canonical['evento'] = 'evento';
+      if (keysLower.includes('recompensa')) canonical['recompensa'] = 'recompensa';
+      if (keysLower.includes('bloqueado')) canonical['bloqueado'] = 'bloqueado';
+      // merge canonical keys into tileList registry so renderer can find them by canonical names
+      const registryKeys = Array.from(new Set([...keysLower, ...Object.values(canonical)]));
+      this.registry.set('availableTileKeys', registryKeys);
       // load cornerstone crystal as a normal PNG texture.
       // (Cornerstone.svg is a 39MB/267k-path auto-trace and must never be
       // loaded as a live texture — see note above.)
@@ -144,8 +156,7 @@ export default class BootScene extends Phaser.Scene {
         this.load.image('cornerstone', `/assets/cornerstone/crystal.png?_ts=${now}`);
       }
 
-      // expose loaded tile keys to registry for renderer to pick (lowercase)
-      this.registry.set('availableTileKeys', tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase()));
+      // available keys already set (registryKeys) above; leave as-is
 
       const loadList: any = this.load.list;
       const hasQueued = loadList ? (loadList.size !== undefined ? loadList.size > 0 : (loadList.length > 0)) : false;
