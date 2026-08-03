@@ -132,8 +132,9 @@ export default class BootScene extends Phaser.Scene {
         // don't force-add straight.png if it doesn't exist on disk; leave tileList as-is
       }
 
+      const sanitizeKey = (name: string) => name.replace(/\.[a-z]+$/i, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
       tileList.forEach(name => {
-        const key = name.replace(/\.[a-z]+$/i, '').toLowerCase();
+        const key = sanitizeKey(name);
         if (!this.textures.exists(key)) {
           this.load.image(key, `/assets/tiles/${name}?_ts=${now}`);
         }
@@ -165,14 +166,20 @@ export default class BootScene extends Phaser.Scene {
             // eslint-disable-next-line no-console
             console.log('[BootScene] probe', p, '->', r.status, r.ok);
             if (r.ok) {
-              keysLower.push(lower);
-              if (!this.textures.exists(lower)) this.load.image(lower, `/assets/tiles/${p}?_ts=${now}`);
-              // map canonical names
-              if (lower === 'neutral_tile') canonical['neutral_tile'] = lower;
-              if (lower === 'revelado') canonical['revelado'] = lower;
-              if (lower === 'evento') canonical['evento'] = lower;
-              if (lower === 'recompensa') canonical['recompensa'] = lower;
-              if (lower === 'bloqueado') canonical['bloqueado'] = lower;
+              // choose mapped key (sanitize)
+              let mappedKey = sanitizeKey(p);
+              if (/curve180|cruve180/i.test(lower)) mappedKey = 'curve-180';
+              if (/curve-?90.*right|90degrerigth|90degree-right/i.test(lower)) mappedKey = 'curve-90-right';
+              if (/curve-?90.*left|90degreleft|90degree-left/i.test(lower)) mappedKey = 'curve-90-left';
+              if (/t.?intersection|cruzamento|cross|intersection/i.test(lower)) mappedKey = 't-intersection';
+              keysLower.push(mappedKey);
+              if (!this.textures.exists(mappedKey)) this.load.image(mappedKey, `/assets/tiles/${p}?_ts=${now}`);
+              // map canonical gameplay keys
+              if (mappedKey === 'neutral_tile') canonical['neutral_tile'] = mappedKey;
+              if (mappedKey === 'revelado') canonical['revelado'] = mappedKey;
+              if (mappedKey === 'evento') canonical['evento'] = mappedKey;
+              if (mappedKey === 'recompensa') canonical['recompensa'] = mappedKey;
+              if (mappedKey === 'bloqueado') canonical['bloqueado'] = mappedKey;
             }
           } catch (e) {
             // ignore
@@ -181,12 +188,42 @@ export default class BootScene extends Phaser.Scene {
         // merge canonical keys into tileList registry so renderer can find them by canonical names
         const registryKeys = Array.from(new Set([...keysLower, ...Object.values(canonical)]));
         this.registry.set('availableTileKeys', registryKeys);
+        // Ensure common curve/intersection assets are queued for load even if probes failed
+        const forceLoad = [
+          'Curve180.png','Cruve180.png','Curve-90degrerigth.png','Curve-90degreleft.png',
+            'Curve-90degree-right.png','Curve-90degree-left.png','T intersection.png','T-intersection.png','t-intersection.png','Cruzamento.png'
+        ];
+        for (const f of forceLoad) {
+            // map known problematic filenames to canonical keys
+            const raw = f.replace(/\.[a-z]+$/i, '').toLowerCase();
+            let mapped = raw;
+            if (/cruve180|curve180/i.test(raw)) mapped = 'curve-180';
+            if (/curve-?90.*right|90degrerigth|90degree-right/i.test(raw)) mapped = 'curve-90-right';
+            if (/curve-?90.*left|90degreleft|90degree-left/i.test(raw)) mapped = 'curve-90-left';
+            if (/t.?intersection|cruzamento|cross|intersection/i.test(raw)) mapped = 't-intersection';
+            if (!this.textures.exists(mapped)) {
+              // queue load using original filename but register under canonical mapped key
+              this.load.image(mapped, `/assets/tiles/${f}?_ts=${now}`);
+              if (!registryKeys.includes(mapped)) registryKeys.push(mapped);
+            }
+        }
+        this.registry.set('availableTileKeys', registryKeys);
       // load cornerstone crystal as a normal PNG texture.
       // (Cornerstone.svg is a 39MB/267k-path auto-trace and must never be
       // loaded as a live texture — see note above.)
       if (!this.textures.exists('cornerstone')) {
         this.load.image('cornerstone', `/assets/cornerstone/crystal.png?_ts=${now}`);
       }
+
+      // log/load events to surface file-level errors for debugging
+      this.load.on('filecomplete', (key: string, type: string, data: any) => {
+        // eslint-disable-next-line no-console
+        console.log('[BootScene] filecomplete', key, type);
+      });
+      this.load.on('loaderror', (file: any) => {
+        // eslint-disable-next-line no-console
+        console.warn('[BootScene] loaderror', file && file.key, file && file.src);
+      });
 
       // available keys already set (registryKeys) above; leave as-is
 

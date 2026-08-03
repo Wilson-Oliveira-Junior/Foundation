@@ -60,10 +60,13 @@ export default class GameScene extends Phaser.Scene {
     // ensure required textures are loaded before drawing
     const tex = this.textures;
     const toLoad: { key: string; url: string }[] = [];
-    // ensure the neutral tile texture is loaded
-    // actual file on disk is assets/tiles/neutral_tile.png
-    if (!tex.exists('neutral_tile')) {
-      toLoad.push({ key: 'neutral_tile', url: '/assets/tiles/neutral_tile.png' });
+    // ensure the base path tile texture is loaded
+    // prefer any already-registered tile keys from BootScene registry
+    const registryKeys = this.registry.get('availableTileKeys') || [];
+    const hasStraightLike = registryKeys.some((k: string) => /straight|neutral|tile-neutral|neutraltile|neutral-tile/i.test(k)) || tex.exists('straight');
+    // only attempt to load a literal straight.png if nothing resembling a straight/neutral tile is available
+    if (!hasStraightLike) {
+      toLoad.push({ key: 'straight', url: '/assets/tiles/straight.png' });
     }
     if (!tex.exists('board-background')) toLoad.push({ key: 'board-background', url: '/assets/background.png' });
     if (toLoad.length > 0) {

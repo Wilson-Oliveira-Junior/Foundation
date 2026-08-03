@@ -59,16 +59,12 @@ export default class Board {
       });
       const tracks: Tile[][] = [];
       Object.keys(tracksMap).map(k => parseInt(k, 10)).sort((a,b)=>a-b).forEach(k => tracks.push(tracksMap[k]));
-      // The JSON currently only defines a fixed number of tracks (one per
-      // authored ring). If it has FEWER tracks than the configured player
-      // count, do NOT use it — that would leave tracks[i] undefined for the
-      // extra players and crash GameScene when placing their pieces.
-      // Keep the tracks already generated adaptively in the constructor instead.
-      if (tracks.length > 0 && tracks.length >= (this.cfg.players || 0)) {
-        // if the JSON contains more tracks than the current game players,
-        // trim to the configured number of players so only requested tracks are shown
-        const desiredTracks = Math.max(1, Math.min(this.cfg.players || tracks.length, tracks.length));
-        this.tracks = tracks.slice(0, desiredTracks);
+      // The JSON defines authoritative tracks. Prefer using all tracks from
+      // the JSON so authored board layouts render exactly as authored.
+      if (tracks.length > 0) {
+        // adopt the JSON tracks and update configured player count
+        this.tracks = tracks.slice(0, tracks.length);
+        this.cfg.players = tracks.length;
         // rebuild model from positions
         this.model = new BoardModel();
         this.tracks.forEach((path: Tile[], trackIndex: number) => {
@@ -77,6 +73,9 @@ export default class Board {
             this.model.setTile({ id, trackIndex, spaceIndex, state: TileState.UNKNOWN });
           });
         });
+        // debug
+        // eslint-disable-next-line no-console
+        console.log('[Board] loaded positions from JSON, tracks=', this.tracks.length);
         return true;
       }
     } catch (e) {
@@ -120,8 +119,8 @@ export default class Board {
       // add background centered; use a low depth so tiles render above it
       const bg = this.scene.add.image(this.cfg.centerX, this.cfg.centerY, 'board-background').setDepth(0);
       bg.setOrigin(0.5, 0.5);
-      // scale to fit radius (best-effort)
-      const desired = (this.cfg.radius || 300) * 2;
+      // scale to fit radius (best-effort) - increase to give more spacing for tiles
+      const desired = (this.cfg.radius || 300) * 2 * 1.15;
       const scaleX = desired / bg.width;
       const scaleY = desired / bg.height;
       bg.setScale(Math.max(scaleX, scaleY) * 1.12);
