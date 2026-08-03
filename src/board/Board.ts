@@ -59,7 +59,12 @@ export default class Board {
       });
       const tracks: Tile[][] = [];
       Object.keys(tracksMap).map(k => parseInt(k, 10)).sort((a,b)=>a-b).forEach(k => tracks.push(tracksMap[k]));
-      if (tracks.length > 0) {
+      // The JSON currently only defines a fixed number of tracks (one per
+      // authored ring). If it has FEWER tracks than the configured player
+      // count, do NOT use it — that would leave tracks[i] undefined for the
+      // extra players and crash GameScene when placing their pieces.
+      // Keep the tracks already generated adaptively in the constructor instead.
+      if (tracks.length > 0 && tracks.length >= (this.cfg.players || 0)) {
         // if the JSON contains more tracks than the current game players,
         // trim to the configured number of players so only requested tracks are shown
         const desiredTracks = Math.max(1, Math.min(this.cfg.players || tracks.length, tracks.length));
@@ -127,9 +132,26 @@ export default class Board {
     // eslint-disable-next-line no-console
     console.log('[Board] board-background exists?', this.scene.textures.exists('board-background'));
     // eslint-disable-next-line no-console
-    console.log('[Board] neutral_tile exists?', this.scene.textures.exists('neutral_tile'));
+    console.log('[Board] straight tile exists?', this.scene.textures.exists('straight'));
     this.graphics.lineStyle(2, 0xffffff, 0.6);
-    this.renderer.drawTrack(this.tracks.flat());
+    // DEMO: mark a few tiles with different states to preview visuals
+    try {
+      // clear any previous demo markings
+      // pick some example tiles if present
+      if (this.tracks && this.tracks.length > 0) {
+        const t0 = this.tracks[0] && this.tracks[0][0];
+        const t1 = this.tracks[1] && this.tracks[1][2];
+        const t2 = this.tracks[2] && this.tracks[2][3];
+        const t3 = this.tracks[0] && this.tracks[0][4];
+        if (t0) this.model.setTileState(`${0}-${0}`, (t0.state ? t0.state : 'SUCCESS') as any);
+        if (t1) this.model.setTileState(`${1}-${2}`, 'BLOCKED' as any);
+        if (t2) this.model.setTileState(`${2}-${3}`, 'REWARD' as any);
+        if (t3) this.model.setTileState(`${0}-${4}`, 'DISCOVERED' as any);
+      }
+    } catch (e) {
+      // ignore demo errors
+    }
+    this.renderer.drawTracks(this.tracks, this.model);
     const { centerX, centerY } = this.cfg;
     // enforce depths for key layers: background (0) < tiles (10) < cornerstone (20)
     try {
