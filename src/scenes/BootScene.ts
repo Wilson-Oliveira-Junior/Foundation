@@ -139,16 +139,48 @@ export default class BootScene extends Phaser.Scene {
         }
       });
       // create canonical mapping for common gameplay tile states to available files
-      const keysLower = tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase());
-      const canonical: Record<string,string> = {};
-      if (keysLower.includes('neutral_tile')) canonical['neutral_tile'] = 'neutral_tile';
-      if (keysLower.includes('revelado')) canonical['revelado'] = 'revelado';
-      if (keysLower.includes('evento')) canonical['evento'] = 'evento';
-      if (keysLower.includes('recompensa')) canonical['recompensa'] = 'recompensa';
-      if (keysLower.includes('bloqueado')) canonical['bloqueado'] = 'bloqueado';
-      // merge canonical keys into tileList registry so renderer can find them by canonical names
-      const registryKeys = Array.from(new Set([...keysLower, ...Object.values(canonical)]));
-      this.registry.set('availableTileKeys', registryKeys);
+        // create canonical mapping for common gameplay tile states to available files
+        const keysLower = tileList.map(n => n.replace(/\.[a-z]+$/i, '').toLowerCase());
+        const canonical: Record<string,string> = {};
+        if (keysLower.includes('neutral_tile')) canonical['neutral_tile'] = 'neutral_tile';
+        if (keysLower.includes('revelado')) canonical['revelado'] = 'revelado';
+        if (keysLower.includes('evento')) canonical['evento'] = 'evento';
+        if (keysLower.includes('recompensa')) canonical['recompensa'] = 'recompensa';
+        if (keysLower.includes('bloqueado')) canonical['bloqueado'] = 'bloqueado';
+        // If directory listing failed (tileList empty), probe known filenames so we still load assets
+        const probes = [
+          'neutral_tile.png','Revelado.png','revelado.png','Evento.png','Recompensa.png','Bloqueado.png','straight.png','Tile-Neutral.png',
+          // curve and intersection variants (english/portuguese and common typos)
+          'Curve180.png','Cruve180.png','Curve-90degrerigth.png','Curve-90degreleft.png','Curve-90degree-right.png','Curve-90degree-left.png',
+          'T intersection.png','T-intersection.png','t-intersection.png','Cruzamento.png','cross.png','intersection.png'
+        ];
+        for (const p of probes) {
+          const lower = p.replace(/\.[a-z]+$/i, '').toLowerCase();
+          if (keysLower.includes(lower)) continue;
+          try {
+            // attempt to fetch the file; if exists, queue load
+            // use headless GET
+            // eslint-disable-next-line no-await-in-loop
+            const r = await fetch(`/assets/tiles/${p}?_ts=${now}`, { method: 'GET' });
+            // eslint-disable-next-line no-console
+            console.log('[BootScene] probe', p, '->', r.status, r.ok);
+            if (r.ok) {
+              keysLower.push(lower);
+              if (!this.textures.exists(lower)) this.load.image(lower, `/assets/tiles/${p}?_ts=${now}`);
+              // map canonical names
+              if (lower === 'neutral_tile') canonical['neutral_tile'] = lower;
+              if (lower === 'revelado') canonical['revelado'] = lower;
+              if (lower === 'evento') canonical['evento'] = lower;
+              if (lower === 'recompensa') canonical['recompensa'] = lower;
+              if (lower === 'bloqueado') canonical['bloqueado'] = lower;
+            }
+          } catch (e) {
+            // ignore
+          }
+        }
+        // merge canonical keys into tileList registry so renderer can find them by canonical names
+        const registryKeys = Array.from(new Set([...keysLower, ...Object.values(canonical)]));
+        this.registry.set('availableTileKeys', registryKeys);
       // load cornerstone crystal as a normal PNG texture.
       // (Cornerstone.svg is a 39MB/267k-path auto-trace and must never be
       // loaded as a live texture — see note above.)
